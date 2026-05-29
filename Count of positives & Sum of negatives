@@ -1,0 +1,17 @@
+def count_positives_sum_negatives(arr):
+    t=len(arr)
+    count=0
+    sum=0
+    if t==0:
+        return arr
+    else:
+        for i in arr:
+            if i>0:
+                count+=1
+            elif i<0:
+                sum+=i
+    res=[count, sum]
+    return res
+                
+                
+            
