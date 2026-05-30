@@ -1,0 +1,10 @@
+def invert(lst):
+    liste=[]
+    for i in lst:
+         liste.append(-i)
+    return liste
+
+
+#A check:
+#def invert(lst):
+#    return [-x for x in lst]
