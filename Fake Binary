@@ -1,0 +1,8 @@
+def fake_bin(x):
+    n=''
+    for i in x:
+        if int(i)<5:
+            n+='0'
+        else:
+            n+='1'
+    return n
