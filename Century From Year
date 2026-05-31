@@ -1,0 +1,7 @@
+def century(year):
+    digit_one=year%10
+    x=year//100
+    if digit_one==0:
+        return x
+    else:
+        return x+1
