@@ -1,0 +1,5 @@
+def enough(cap, on, wait):
+    if wait>cap-on:
+        return abs(cap-on-wait)
+    else:
+        return 0
