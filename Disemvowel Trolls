@@ -1,0 +1,9 @@
+def disemvowel(string):
+    result = ""
+    
+    for letter in string:
+        if letter != "a" and letter != "e" and letter != "i" and letter != "o" and letter != "u" and \
+           letter != "A" and letter != "E" and letter != "I" and letter != "O" and letter != "U":
+            result += letter
+    
+    return result
