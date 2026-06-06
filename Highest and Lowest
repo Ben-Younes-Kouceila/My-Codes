@@ -1,0 +1,15 @@
+def high_and_low(numbers):
+    T=numbers.split()
+    max=int(T[0])
+    min=int(T[0])
+    for i in T:
+        if int(i)<min:
+            min=int(i)
+        elif int(i)>max:
+            max=int(i)
+    res=''
+    res+=str(max)
+    res+=' '
+    res+=str(min)
+    return res
+        
