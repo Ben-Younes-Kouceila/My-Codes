@@ -1,0 +1,9 @@
+def find_average(numbers):
+    avg=0
+    count=0
+    for i in numbers:
+        avg+=i
+        count+=1
+    if count==0:
+        return 0
+    return avg/count
