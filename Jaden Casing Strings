@@ -1,0 +1,10 @@
+def to_jaden_case(string):
+    T=string.split()
+    res=''
+    j=1
+    for i in T:
+        res+=i.capitalize()
+        if j<len(T):
+            res+=' '
+            j+=1
+    return res
