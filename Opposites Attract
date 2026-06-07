@@ -1,0 +1,11 @@
+def odd_or_even(flower):
+    if flower%2==0:
+        return 'even'
+    else:
+        return 'odd'
+
+def lovefunc( flower1, flower2 ):
+    if (odd_or_even(flower1)=='even' and odd_or_even(flower2)=='odd') or (odd_or_even(flower2)=='even' and odd_or_even(flower1)=='odd'):
+        return True
+    else:
+        return False
