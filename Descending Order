@@ -1,0 +1,14 @@
+def descending_order(num):
+    temp=[]
+    res=''
+    for i in str(num):
+        temp.append(int(i))
+    max=temp[0]
+    while len(temp)!=0:
+        max=temp[0]
+        for i in range(0,len(temp)):
+            if max<temp[i]:
+                max=temp[i]
+        res+=str(max)
+        del temp[temp.index(max)]
+    return int(res)
