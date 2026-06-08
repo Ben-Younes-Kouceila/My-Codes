@@ -1,0 +1,9 @@
+def max_rot(n):
+    s = str(n)
+    maxi = n
+
+    for i in range(len(s) - 1):
+        s = s[:i] + s[i+1:] + s[i]
+        maxi = max(maxi, int(s))
+
+    return maxi
