@@ -5,3 +5,6 @@ def row_sum_odd_numbers(n):
         sum+=first
         first+=2
     return sum
+
+
+    #return n**3
