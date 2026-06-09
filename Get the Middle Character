@@ -1,0 +1,10 @@
+def get_middle(s):
+    type=len(s)%2
+    if type==0:
+        for i in range(0,len(s)):
+            if len(s[i:len(s)-i])==2:
+                return s[i:len(s)-i]
+    if type==1:
+        for i in range(0,len(s)):
+            if len(s[i:len(s)-i])==1:
+                return s[i:len(s)-i]
