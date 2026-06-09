@@ -3,3 +3,12 @@ def is_square(n):
         if i*i==n:
             return True
     return False
+
+
+#Le code ci dessus n'est pas optimal for large numbers
+
+def is_square(n):
+    if n<0:
+        return False
+    root=int(n**0.5)
+    return root*root==n
