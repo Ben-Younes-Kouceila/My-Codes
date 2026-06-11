@@ -1,0 +1,48 @@
+def order(sentence):
+    T=sentence.split()
+    res=""
+    for i in T:
+        for j in i:
+            if j=="1":
+                res+=i
+    for i in T:
+        for j in i:
+            if j=="2":
+                res+=" "
+                res+=i
+    for i in T:
+        for j in i:
+            if j=="3":
+                res+=" "
+                res+=i
+    for i in T:
+        for j in i:
+            if j=="4":
+                res+=" "
+                res+=i
+    for i in T:
+        for j in i:
+            if j=="5":
+                res+=" "
+                res+=i
+    for i in T:
+        for j in i:
+            if j=="6":
+                res+=" "
+                res+=i
+    for i in T:
+        for j in i:
+            if j=="7":
+                res+=" "
+                res+=i
+    for i in T:
+        for j in i:
+            if j=="8":
+                res+=" "
+                res+=i
+    for i in T:
+        for j in i:
+            if j=="9":
+                res+=" "
+                res+=i
+    return res
