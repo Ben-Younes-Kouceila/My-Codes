@@ -1,0 +1,15 @@
+def duplicate_count(text):
+    text = text.lower()
+    temp = set()
+    double = set()
+    count = 0
+
+    for c in text:
+        if c in temp:
+            if c not in double:
+                count += 1
+                double.add(c)
+        else:
+            temp.add(c)
+
+    return count
