@@ -1,0 +1,8 @@
+def persistence(n):
+    if n<10:
+        return 0
+    p=1
+    n=str(n)
+    for i in n:
+        p*=int(i)
+    return persistence(p)+1
