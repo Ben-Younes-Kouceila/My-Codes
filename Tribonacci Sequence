@@ -1,0 +1,13 @@
+def tribonacci(signature, n):
+    if n == 0:
+        return []
+
+    if n <= 3:
+        return signature[:n]
+
+    res = signature[:]
+
+    for i in range(n - 3):
+        res.append(res[-1] + res[-2] + res[-3])
+
+    return res
