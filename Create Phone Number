@@ -1,0 +1,11 @@
+def create_phone_number(n):
+    res="("
+    for i in n[:3]:
+        res+=str(i)
+    res+=") "
+    for i in n[3:6]:
+        res+=str(i)
+    res+="-"
+    for i in n[6:]:
+        res+=str(i)
+    return res
