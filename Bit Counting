@@ -1,0 +1,8 @@
+def count_bits(n):
+    bin=0
+    while n!=0:
+        bin*=10
+        bin+=(n%2)
+        n//=2
+    return str(bin).count("1")
+        
