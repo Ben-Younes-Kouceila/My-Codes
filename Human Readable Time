@@ -1,0 +1,15 @@
+def make_readable(seconds):
+    HH=seconds//3600
+    MM=(seconds-(HH*3600))//60
+    SS=seconds-((HH*3600)+MM*60)
+    HH=str(HH)
+    MM=str(MM)
+    SS=str(SS)
+    if len(HH)==1:
+        HH='0'+HH
+    if len(MM)==1:
+        MM='0'+MM
+    if len(SS)==1:
+        SS='0'+SS
+    res=":".join([HH,MM,SS])
+    return res
