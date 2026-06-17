@@ -1,0 +1,15 @@
+def pig_it(text):
+    res=[]
+    T=text.split()
+    for i in T:
+        if i.isalpha():
+            if len(i)==1:
+                i+='ay'
+                res.append(i)
+            elif len(i)>1:
+                res.append(i[1:]+i[0]+'ay')
+        else:
+            res.append(i)
+    return ' '.join(res)
+                
+                
