@@ -1,0 +1,11 @@
+def rot13(message):
+    res=''
+    for i in message:
+        if i.isalpha():
+            if i.islower():
+                res+= chr((ord(i) - ord('a') + 13) % 26 + ord('a'))
+            else:
+                res+= chr((ord(i) - ord('A') + 13) % 26 + ord('A'))
+        else:
+            res+=i
+    return res
