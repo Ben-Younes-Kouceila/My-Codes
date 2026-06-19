@@ -1,0 +1,22 @@
+def product_fib(_prod):
+    def fib(n):
+        if n==0:
+            return 0
+        if n==1:
+            return 1
+        return fib(n-1)+fib(n-2)
+    i=0
+    prod=0
+    while prod<_prod:
+        prod=fib(i)*fib(i+1)
+        if prod==_prod:
+            return [fib(i),fib(i+1),True]
+        i+=1
+    return [fib(i-1), fib(i), False]
+#Cette solution répéte a chauqe fois le compte de fib, timeout sur les grandes valeurs
+
+def product_fib(_prod):
+    a,b=0,1
+    while a*b<_prod:
+        a,b=b,a+b
+    return [a,b,a*b==_prod]
