@@ -1,0 +1,8 @@
+def first_non_repeating_letter(s):
+    lower = s.lower()
+
+    for i, c in enumerate(lower):
+        if lower.count(c) == 1:
+            return s[i]
+
+    return ""
