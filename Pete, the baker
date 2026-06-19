@@ -1,0 +1,10 @@
+def cakes(recipe, available):
+    min=100000000
+    for i in recipe.keys():
+        if i not in available.keys():
+            return 0
+        else:
+            temp=available.get(i)//recipe.get(i)
+            if temp<min:
+                min=temp
+    return min
