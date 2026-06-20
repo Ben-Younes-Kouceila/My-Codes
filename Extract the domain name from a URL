@@ -1,0 +1,10 @@
+def domain_name(url):
+    url=url.replace("https://","")
+    url=url.replace("http://","")
+    T=url.split("/")
+    url=T[0]
+    T=url.split(".")
+    if T[0]=="www":
+        return T[1]
+    else:
+        return T[0]
