@@ -1,0 +1,8 @@
+def alphanumeric(password: str) -> bool:
+    if password == "":
+        return False
+    for i in password:
+        if (not i.isalpha()) and (not i.isdigit()):
+            return False
+
+    return True
