@@ -1,0 +1,4 @@
+def ips_between(start, end):
+    T1=start.split(".")
+    T2=end.split(".")
+    return int(T2[0])*256*256*256-int(T1[0])*256*256*256+(int(T2[1])*256*256-int(T1[1])*256*256)+(int(T2[2])*256-int(T1[2])*256)+(int(T2[3])-int(T1[3]))
