@@ -1,0 +1,5 @@
+def solution(array_a, array_b):
+    count=0
+    for a,b in zip(array_a, array_b):
+        count+=abs(a-b)**2
+    return count/len(array_a)
