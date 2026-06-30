@@ -1,0 +1,21 @@
+def sum_strings(x, y):
+    def egaliser_zero(x, y):
+        taille = max(len(x), len(y))
+        return x.zfill(taille), y.zfill(taille)
+
+    x, y = egaliser_zero(x, y)
+
+    add = 0
+    res = ""
+
+    for i, j in zip(x[::-1], y[::-1]):
+        l = int(i) + int(j) + add
+
+        res += str(l % 10)
+        add = l // 10
+
+    if add:
+        res += str(add)
+
+    res = res[::-1].lstrip("0")
+    return res if res else "0"
