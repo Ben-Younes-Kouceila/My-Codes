@@ -1,0 +1,28 @@
+def snail(array):
+    res = []
+
+    while array:
+        res.extend(array[0])
+        del array[0]
+
+        if not array:
+            break
+
+        for i in array:
+            res.append(i[-1])
+            del i[-1]
+
+        if not array or not array[0]:
+            break
+
+        res.extend(array[-1][::-1])
+        del array[-1]
+
+        if not array:
+            break
+
+        for i in reversed(array):
+            res.append(i[0])
+            del i[0]
+
+    return res
