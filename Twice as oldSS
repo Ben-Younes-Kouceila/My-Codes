@@ -1,0 +1,7 @@
+#!/bin/bash
+res=$(($1 - 2 * $2))
+if (( res >= 0)); then
+    echo $res
+else
+    echo $((-res))
+fi
