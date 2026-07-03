@@ -1,0 +1,5 @@
+#!/bin/bash
+time=$1
+
+entier=${time%.*}
+echo $((entier / 2))
