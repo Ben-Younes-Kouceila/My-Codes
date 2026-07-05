@@ -1,0 +1,107 @@
+#!/bin/bash
+s1=$1
+s2=$2
+letter=a
+if [[ "$s1" == *"$letter"* || "$s2" == *"$letter"* ]]; then
+    echo -n "$letter"
+fi
+letter=b
+if [[ "$s1" == *"$letter"* || "$s2" == *"$letter"* ]]; then
+    echo -n "$letter"
+fi
+letter=c
+if [[ "$s1" == *"$letter"* || "$s2" == *"$letter"* ]]; then
+    echo -n "$letter"
+fi
+letter=d
+if [[ "$s1" == *"$letter"* || "$s2" == *"$letter"* ]]; then
+    echo -n "$letter"
+fi
+letter=e
+if [[ "$s1" == *"$letter"* || "$s2" == *"$letter"* ]]; then
+    echo -n "$letter"
+fi
+letter=f
+if [[ "$s1" == *"$letter"* || "$s2" == *"$letter"* ]]; then
+    echo -n "$letter"
+fi
+letter=g
+if [[ "$s1" == *"$letter"* || "$s2" == *"$letter"* ]]; then
+    echo -n "$letter"
+fi
+letter=h
+if [[ "$s1" == *"$letter"* || "$s2" == *"$letter"* ]]; then
+    echo -n "$letter"
+fi
+letter=i
+if [[ "$s1" == *"$letter"* || "$s2" == *"$letter"* ]]; then
+    echo -n "$letter"
+fi
+letter=j
+if [[ "$s1" == *"$letter"* || "$s2" == *"$letter"* ]]; then
+    echo -n "$letter"
+fi
+letter=k
+if [[ "$s1" == *"$letter"* || "$s2" == *"$letter"* ]]; then
+    echo -n "$letter"
+fi
+letter=l
+if [[ "$s1" == *"$letter"* || "$s2" == *"$letter"* ]]; then
+    echo -n "$letter"
+fi
+letter=m
+if [[ "$s1" == *"$letter"* || "$s2" == *"$letter"* ]]; then
+    echo -n "$letter"
+fi
+letter=n
+if [[ "$s1" == *"$letter"* || "$s2" == *"$letter"* ]]; then
+    echo -n "$letter"
+fi
+letter=o
+if [[ "$s1" == *"$letter"* || "$s2" == *"$letter"* ]]; then
+    echo -n "$letter"
+fi
+letter=p
+if [[ "$s1" == *"$letter"* || "$s2" == *"$letter"* ]]; then
+    echo -n "$letter"
+fi
+letter=q
+if [[ "$s1" == *"$letter"* || "$s2" == *"$letter"* ]]; then
+    echo -n "$letter"
+fi
+letter=r
+if [[ "$s1" == *"$letter"* || "$s2" == *"$letter"* ]]; then
+    echo -n "$letter"
+fi
+letter=s
+if [[ "$s1" == *"$letter"* || "$s2" == *"$letter"* ]]; then
+    echo -n "$letter"
+fi
+letter=t
+if [[ "$s1" == *"$letter"* || "$s2" == *"$letter"* ]]; then
+    echo -n "$letter"
+fi
+letter=u
+if [[ "$s1" == *"$letter"* || "$s2" == *"$letter"* ]]; then
+    echo -n "$letter"
+fi
+letter=v
+if [[ "$s1" == *"$letter"* || "$s2" == *"$letter"* ]]; then
+    echo -n "$letter"
+fi
+letter=w
+if [[ "$s1" == *"$letter"* || "$s2" == *"$letter"* ]]; then
+    echo -n "$letter"
+fi
+letter=x
+if [[ "$s1" == *"$letter"* || "$s2" == *"$letter"* ]]; then
+    echo -n "$letter"
+fi
+letter=y
+if [[ "$s1" == *"$letter"* || "$s2" == *"$letter"* ]]; then
+    echo -n "$letter"
+fi
+letter=z
+if [[ "$s1" == *"$letter"* || "$s2" == *"$letter"* ]]; then
+    echo -n "$letter"
+fi
