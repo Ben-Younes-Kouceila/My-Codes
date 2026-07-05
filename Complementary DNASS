@@ -1,0 +1,14 @@
+#!/bin/bash
+word=$1
+for ((i=0; i<${#word}; i++))
+do
+    if [[ "${word:i:1}" == "A" ]]; then
+    echo -n "T"
+    elif [[ "${word:i:1}" == "T" ]]; then
+    echo -n "A"
+    elif [[ "${word:i:1}" == "C" ]]; then
+    echo -n "G"
+    elif [[ "${word:i:1}" == "G" ]]; then
+    echo -n "C"
+    fi
+done
