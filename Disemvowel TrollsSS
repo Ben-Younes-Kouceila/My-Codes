@@ -2,7 +2,7 @@
 comment=$1
 for ((i=0; i<${#comment}; i++))
 do
-    if [[ "aeiouyAEIOUY" != *"${comment:i:1}"* ]]; then
+    if [[ "aeiouAEIOU" != *"${comment:i:1}"* ]]; then
     echo -n "${comment:i:1}"
     fi
 done
